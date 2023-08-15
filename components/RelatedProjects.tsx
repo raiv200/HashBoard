@@ -18,14 +18,14 @@ const RelatedProjects = async ({ userId, projectId }: Props) => {
     if (filteredProjects?.length === 0) return null;
 
     return (
-        <section className="flex flex-col mt-32 w-full">
-            <div className="flexBetween">
+        <section className="flex flex-col mt-12 w-full">
+            <div className="flexBetween p-2 mb-4">
                 <p className="text-base font-bold">
                     More by {result?.user?.name}
                 </p>
                 <Link
                     href={`/profile/${result?.user?.id}`}
-                    className="text-primary-cyan text-base"
+                    className="text-white text-md bg-gray py-1 px-2 rounded-md"
                 >
                     View All
                 </Link>
@@ -34,8 +34,8 @@ const RelatedProjects = async ({ userId, projectId }: Props) => {
             <div className="related_projects-grid">
                 {filteredProjects?.map(({ node }: { node: ProjectInterface }) => (
                     <div className="flexCenter related_project-card drop-shadow-card">
-                    <Link href={`/project/${node?.id}`} className="flexCenter group relative w-full h-full">
-                        <Image src={node?.image} width={414} height={314} className="w-full h-full object-cover rounded-2xl" alt="project image" />
+                    <Link href={`/project/${node?.id}`} className="flexCenter group relative w-full h-full ">
+                        <Image src={node?.image} width={314} height={214} className=" w-full h-full object-cover rounded-xl" alt="project image" />
         
                         <div className="hidden group-hover:flex related_project-card_title">
                             <p className="w-full">{node?.title}</p>

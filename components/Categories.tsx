@@ -11,8 +11,9 @@ const Categories = () => {
 
   const category = searchParams.get("category");
 
-  const handleTags = (item: string) => {
+  const handleTags : any = (item: string) => {
     router.push(`${pathName}?category=${item}`);
+  
   };
 
   return (
@@ -25,9 +26,9 @@ const Categories = () => {
             onClick={() => handleTags(filter)}
             className={`${
               category === filter
-                ? "text-black font-semibold bg-primary-cyan "
+                ? "text-black font-semibold bg-orange-400 "
                 : "font-medium text-black bg-white"
-            } px-4 py-2 rounded-lg capitalize whitespace-nowrap  hover:bg-cyan-200`}
+            } px-4 py-2 rounded-lg capitalize whitespace-nowrap  hover:bg-orange-200`}
           >
             {filter}
           </button>

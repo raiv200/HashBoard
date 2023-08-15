@@ -67,7 +67,6 @@ Steps to run the app locally:
  1. First create a .env file in **root of the directory** and add the following environment variables.
 
  2. Also create one more .env file inside the **grafbase** folder and add the following environment variable.
-d.
 
 #### Step-4: Start the development server
 

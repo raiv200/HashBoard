@@ -28,7 +28,7 @@ const Navbar = async () => {
       <Link href='/'>
           <Image
             src='/logo.svg'
-            width={180}
+            width={170}
             height={45}
             alt='logo'
             />

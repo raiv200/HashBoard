@@ -1,7 +1,16 @@
+"use client"
+
 import React from "react";
 import Categories from "./Categories";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+   router.push('/create-project')
+  }
   return (
     <div className="flex flex-col space-y-10 md:space-y-10 h-[500px] w-full md:mb-10">
       <Categories />
@@ -28,7 +37,7 @@ const HeroSection = () => {
               improve your product recommendations to users.
             </p>
             <div className="flex justify-center items-center ">
-              <button className="border-1 bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-6">
+              <button onClick={handleClick} className="border-1 bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-6">
                 Get Started
               </button>
             </div>

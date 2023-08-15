@@ -57,12 +57,10 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 )}
             </section>
 
-            <section className="mt-14">
-                <Image
+            <section className="w-[700px] h-[500px] mt-14">
+                <img
                     src={`${projectDetails?.image}`}
-                    className="object-cover rounded-2xl"
-                    width={1064}
-                    height={798}
+                    className="w-full h-full rounded-2xl"
                     alt="poster"
                 />
             </section>
@@ -83,7 +81,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                 </div>
             </section>
       
-            <section className="flexCenter w-full gap-8 mt-28">
+            <section className="flexCenter w-full gap-8 mt-16">
                 <span className="w-full h-0.5 bg-light-white-200" />
                 <Link href={renderLink()} className="min-w-[82px] h-[82px]">
                     <Image

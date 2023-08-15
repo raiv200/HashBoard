@@ -45,7 +45,7 @@ body {
 }
 
 .modal-head-text {
-  @apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
+  @apply md:text-4xl text-2xl font-extrabold text-center max-w-5xl w-full;
 }
 
 .no-result-text {
@@ -77,7 +77,7 @@ body {
 
 /* Related Project Card */
 .related_project-card {
-  @apply flex-col rounded-2xl min-w-[210px] min-h-[197px];
+  @apply flex-col rounded-2xl min-w-[310px] min-h-[197px];
 }
 
 .related_project-card_title {
@@ -125,7 +125,7 @@ body {
 }
 
 .modal_wrapper {
-  @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-white rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+  @apply flex justify-start items-center flex-col w-[90%] h-[85%] md:w-[70%]  bottom-0 mx-auto mt-20 bg-white rounded-xl lg:px-16 lg:mt-20 px-8 pt-14 pb-20 overflow-auto;
 }
 
 /* Navbar */
@@ -145,7 +145,7 @@ body {
 
 /* Project Form */
 .form {
-  @apply flex-col w-full lg:pt-24 pt-12 gap-10 text-lg max-w-5xl mx-auto;
+  @apply flex-col w-full lg:pt-12 pt-6 gap-10 text-lg max-w-5xl mx-auto;
 }
 
 .form_image-container {
