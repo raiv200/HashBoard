@@ -29,7 +29,7 @@ const Project = g.model('Project', {
 
 const jwt = auth.JWT({
   issuer: 'grafbase',
-  secret:  process.env.NEXTAUTH_SECRET!,
+  secret:  "W9UBlMH0eGeI6AV6M14V0kGnmhUrGW9XYUpAFfctEnw=",
 })
 
 export default config({
