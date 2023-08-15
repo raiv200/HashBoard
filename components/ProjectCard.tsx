@@ -34,12 +34,12 @@ const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
                     alt="project image"
                 />
 
-                <div className="hidden group-hover:flex profile_card-title">
+                <div className="hidden group-hover:flex profile_card-title text-white">
                     <p className="w-full">{title}</p>
                 </div>
             </Link>
 
-            <div className="flexBetween w-full px-2 mt-3 font-semibold text-sm">
+            <div className="flexBetween w-full px-2 mt-3 font-semibold text-sm text-white">
                 <Link href={`/profile/${userId}`}>
                         <div className="flexCenter gap-2">
                             <Image

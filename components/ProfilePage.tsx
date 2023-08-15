@@ -13,9 +13,9 @@ const ProfilePage = ({ user }: Props) => (
     <section className='flexCenter flex-col max-w-10xl w-full mx-auto paddings'>
         <section className="flexBetween max-lg:flex-col gap-10 w-full">
             <div className='flex items-start flex-col w-full'>
-                <Image src={user?.avatarUrl} width={100} height={100} className="rounded-full" alt="user image" />
-                <p className="text-4xl font-bold mt-10">{user?.name}</p>
-                <p className="md:text-5xl text-3xl font-extrabold md:mt-10 mt-5 max-w-lg">I’m a Frontend Web Developer.</p>
+                <Image src={user?.avatarUrl} width={80} height={80} className="rounded-full" alt="user image" />
+                <p className="text-4xl font-bold mt-4">{user?.name}</p>
+                <p className="md:text-5xl text-3xl font-extrabold md:mt-4 mt-5 max-w-lg">I’m a Frontend Web Developer.</p>
                 
                 <div className="flex mt-8 gap-5 w-full flex-wrap">
                     <Button 

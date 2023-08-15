@@ -113,14 +113,14 @@ const ProjectForm = ({ type, session, project }: Props) => {
             <FormField
                 title="Title"
                 state={form.title}
-                placeholder="Flexibble"
+                placeholder="Hashboard"
                 setState={(value) => handleStateChange('title', value)}
             />
 
             <FormField
                 title='Description'
                 state={form.description}
-                placeholder="Showcase and discover remarkable developer projects."
+                placeholder="Showcase and Discover remarkable Web Dev Projects made by you and your fellow developer"
                 isTextArea
                 setState={(value) => handleStateChange('description', value)}
             />
@@ -129,7 +129,7 @@ const ProjectForm = ({ type, session, project }: Props) => {
                 type="url"
                 title="Website URL"
                 state={form.liveSiteUrl}
-                placeholder="https://jsmastery.pro"
+                placeholder="https://nextjsdev.com"
                 setState={(value) => handleStateChange('liveSiteUrl', value)}
             />
 
@@ -137,7 +137,7 @@ const ProjectForm = ({ type, session, project }: Props) => {
                 type="url"
                 title="GitHub URL"
                 state={form.githubUrl}
-                placeholder="https://github.com/adrianhajdin"
+                placeholder="https://github.com/raiv200"
                 setState={(value) => handleStateChange('githubUrl', value)}
             />
 

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "HashBoard",
-  description: "Showcase and discover remarkable developer projects",
+  description: "Showcase and Discover remarkable Web Dev Projects made by you and your fellow developer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

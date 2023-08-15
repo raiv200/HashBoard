@@ -35,13 +35,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 12px;
+  border-radius: 3px;
 }
 
 .modal-head-text {
@@ -130,7 +130,7 @@ body {
 
 /* Navbar */
 .navbar {
-  @apply py-5 px-8 border-b border-nav-border gap-4;
+  @apply py-5 px-8 md:px-24 border-b border-nav-border gap-4;
 }
 
 /* Profile Menu */

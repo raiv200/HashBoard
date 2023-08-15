@@ -12,17 +12,9 @@ const Navbar = async () => {
   const session = await getCurrentUser()
 
   return (
-    <nav className='flexBetween navbar'>
-      <div className='flex-1 flexStart gap-10'>
-        <Link href='/'>
-          <Image
-            src='/logo.svg'
-            width={116}
-            height={43}
-            alt='logo'
-          />
-        </Link>
-        <ul className='xl:flex hidden text-small gap-7'>
+    <nav className='flexBetween navbar '>
+      <div className=' flexStart gap-10  lg:w-1/3'>   
+        <ul className='xl:flex hidden text-sm font-semibold  gap-7 '>
           {NavLinks.map((link) => (
             <Link href={link.href} key={link.text}>
               {link.text}
@@ -31,7 +23,19 @@ const Navbar = async () => {
         </ul>
       </div>
 
-      <div className='flexCenter gap-4'>
+<div className="flex flex-1 items-center justify-start lg:justify-center  lg:w-1/3">
+
+      <Link href='/'>
+          <Image
+            src='/logo.svg'
+            width={180}
+            height={45}
+            alt='logo'
+            />
+        </Link>
+            </div>
+
+      <div className='flex items-center justify-end gap-4 lg:w-1/3'>
         {session?.user ? (
           <>
             <ProfileMenu session={session} />
