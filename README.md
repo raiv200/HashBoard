@@ -6,7 +6,7 @@
 
 **To Build an exciting Open-Source app of your choice using Grafbase as Backend and its other features during the whole of August. Publish an article on your Hashnode blog about the process of creating and launching your app for a chance to win one of the 5 cash prizes and swags!**
 
-[Live Demo URL](https://hashboard.vercel.app/)
+[Live Demo URL](https://hashboard-raivikas.vercel.app/)
 
 
 ![Poject Final View](./public/hashboard.png)
